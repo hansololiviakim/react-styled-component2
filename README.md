@@ -1,1 +1,0 @@
-# react-styled-component2
