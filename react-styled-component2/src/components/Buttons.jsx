@@ -13,16 +13,50 @@ function Buttons() {
       <h1>Button</h1>
       {/* primary */}
       <ButtonsSection>
-        <Button size={size[0]} color={color[0]} icon={<FontAwesomeIcon icon={faChevronRight} />}>Large Primary Button</Button>
-        <Button size={size[1]} color={color[0]}>Medium</Button>
-        <Button size={size[2]} color={color[0]}>Small</Button>
+        <Button 
+          size={size[0]}
+          color={color[0]}
+          icon={<FontAwesomeIcon icon={faChevronRight}/>}
+          onClick={() => alert(`버튼을 만들어보세요`)}
+        >
+          Large Primary Button
+        </Button>
+        <Button
+          size={size[1]}
+          color={color[0]}
+        >
+          Medium
+        </Button>
+        <Button
+          size={size[2]}
+          color={color[0]}
+        >
+          Small
+        </Button>
       </ButtonsSection>
 
       {/* negative */}
       <ButtonsSection>
-        <Button size={size[0]} color={color[1]} icon={<FontAwesomeIcon icon={faSun} />}>Large Negative Button</Button>
-        <Button size={size[1]} color={color[1]}>Medium</Button>
-        <Button size={size[2]} color={color[1]}>Small</Button>
+        <Button
+          size={size[0]}
+          color={color[1]}
+          icon={<FontAwesomeIcon icon={faSun} />}
+          onClick={() => prompt(`어렵나요?`)}
+        >
+          Large Negative Button
+        </Button>
+        <Button
+          size={size[1]}
+          color={color[1]}
+        >
+          Medium
+        </Button>
+        <Button
+          size={size[2]}
+          color={color[1]}
+        >
+          Small
+        </Button>
       </ButtonsSection>
     </>
   )

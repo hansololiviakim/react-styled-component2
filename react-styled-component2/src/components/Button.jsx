@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Button({ size, color, icon, children }) {
-  console.log(icon);
+function Button({ size, color, icon, onClick, children }) {
   const Button = styled.div`
     ${() => colorHandler(color)};
     ${() => sizeHandler(size)};
@@ -11,6 +10,7 @@ function Button({ size, color, icon, children }) {
     justify-content: center;
     align-items: center;
     font-size: 13px;
+    cursor: pointer;
   `;
   
   const colorHandler = (color) => {
@@ -36,7 +36,11 @@ function Button({ size, color, icon, children }) {
 
   return (
     <>
-      <Button>{ children }&nbsp;{ icon }</Button>
+      <Button
+        onClick={onClick}
+      >
+        { children }&nbsp;{ icon }
+      </Button>
     </>
   )
 }
