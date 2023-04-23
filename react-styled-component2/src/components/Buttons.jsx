@@ -8,6 +8,9 @@ function Buttons() {
   const size = ['large', 'medium', 'small'];
   const color = ['primary', 'negative'];
 
+  const prBtnClickHandler = () => alert(`버튼을 만들어보세요!`);
+  const ngBtnClickHandler = () => prompt(`어렵나요🤔?`);
+
   return (
     <>
       <h1>Button</h1>
@@ -17,7 +20,7 @@ function Buttons() {
           size={size[0]}
           color={color[0]}
           icon={<FontAwesomeIcon icon={faChevronRight}/>}
-          onClick={() => alert(`버튼을 만들어보세요`)}
+          onClick={prBtnClickHandler}
         >
           Large Primary Button
         </Button>
@@ -41,7 +44,7 @@ function Buttons() {
           size={size[0]}
           color={color[1]}
           icon={<FontAwesomeIcon icon={faSun} />}
-          onClick={() => prompt(`어렵나요?`)}
+          onClick={ngBtnClickHandler}
         >
           Large Negative Button
         </Button>
