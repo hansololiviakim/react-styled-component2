@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import Button from './Button'
 
 function Input() {
 
@@ -38,7 +39,9 @@ function Input() {
           <p>가격</p>
           <MainInput value={price} onChange={priceValue} placeholder='0'/>
         </InputBox>
-        <button onClick={ClickButtonHandler}>저장</button>
+        <Button size={'small'} color={'primary'} onClick={ClickButtonHandler}>
+          저장
+        </Button>
       </InputBoxWrap>
     </>
   )
