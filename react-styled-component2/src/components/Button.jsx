@@ -11,6 +11,9 @@ function Button({ size, color, icon, onClick, children }) {
     align-items: center;
     font-size: 13px;
     cursor: pointer;
+    &:active {
+      filter: brightness(70%);
+    }
   `;
   
   const colorHandler = (color) => {
