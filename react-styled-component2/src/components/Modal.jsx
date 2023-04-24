@@ -101,7 +101,7 @@ function Modal() {
           <Dark onClick={LargeToggleModal}></Dark>
           <LargeModalWrap>
             <LargeModalBtn onClick={LargeToggleModal}>X</LargeModalBtn>
-            <p>닫기 버튼 1개각 있고, <br />외부 영역을 누르면 모달이 닫혀요.</p>
+            <p>닫기 버튼 1개가 있고, <br />외부 영역을 누르면 모달이 닫혀요.</p>
           </LargeModalWrap>
         </>
       }
