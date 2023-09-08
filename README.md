@@ -76,7 +76,7 @@
 # :pencil2: 간단한 회고 및 정리
 <div align="center">
 
-[![blog link](/img/sc-til.png)](https://oliviakim.tistory.com/92)
+[![blog link](/img/sc-til.png)](https://oliviakim.tistory.com/96)
 
 </div>
 
